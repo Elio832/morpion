@@ -52,11 +52,13 @@ def morpion():
         if verifier_victoire(grille):
             afficher_grille(grille)
             print(f"Joueur {joueur} a gagné !")
+            time.sleep(60)
             break
 
         if est_pleine(grille):
             afficher_grille(grille)
             print("Match nul !")
+            time.sleep(60)
             break
 
         joueur = "0" if joueur == "X" else "X"
