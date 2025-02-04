@@ -24,7 +24,7 @@ def est_pleine(grille):
 
 def morpion():
     grille = [[" " for _ in range(3)] for _ in range(3)]
-    joueur = "X"
+    joueur = "Joris"
 
     while True:
         afficher_grille(grille)
@@ -57,7 +57,7 @@ def morpion():
             print("Match nul !")
             break
 
-        joueur = "O" if joueur == "X" else "X"
+        joueur = "Elio" if joueur == "X" else "X"
 
 if __name__ == "__main__":
     morpion()
