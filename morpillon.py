@@ -25,6 +25,8 @@ def est_pleine(grille):
 def morpion():
     grille = [[" " for _ in range(3)] for _ in range(3)]
     joueur = "X"
+    nomJoueur1 = input("choisir un nom :")
+    nomJoueur2 = input("toi aussi :")
 
     while True:
         afficher_grille(grille)
